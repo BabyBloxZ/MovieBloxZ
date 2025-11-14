@@ -133,8 +133,7 @@ public class Hooker implements IXposedHookLoadPackage, IXposedHookZygoteInit {
             ok += MemberInfoHook.apply(cl) ? 1 : 0;
             ok += MemberBriefInfoHook.apply(cl) ? 1 : 0;
             ok += MemberProviderHook.apply(cl) ? 1 : 0;
-            ok += SkipAdHook.apply(cl) ? 1 : 0;   // ← new
-            ok += HQFHook.apply(cl) ? 1 : 0;
+            ok += SkipAdHook.apply(cl) ? 1 : 0;   
             ok += DownloadsHook.apply(cl) ? 1 : 0;
             ok += MemberCheckResultHook.apply(cl) ? 1 : 0;
             ok += UserInfoHook.apply(cl) ? 1 : 0;

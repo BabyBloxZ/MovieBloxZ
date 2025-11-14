@@ -34,8 +34,6 @@ public class Hooker implements IXposedHookLoadPackage {
 
             hookMemberInfo(cl);
             hookMemberBriefInfo(cl);
-            hookMemberProvider(cl);
-            hookHQF(cl);
             hookDownloads(cl);
             hookMemberCheckResult(cl);
             hookUserInfo(cl);
@@ -77,25 +75,6 @@ public class Hooker implements IXposedHookLoadPackage {
         XposedBridge.log("Hooker: MemberBriefInfo hooks applied");
     }
 
-    private void hookMemberProvider(ClassLoader cl) {
-        String[] methods = {"l", "g", "g1", "M", "N1"};
-        for (String m : methods) {
-            try {
-                XposedHelpers.findAndHookMethod("com.transsion.member.MemberProvider", cl, m,
-                        XC_MethodReplacement.returnConstant(true));
-            } catch (Throwable t) {
-                XposedBridge.log("Hooker: MemberProvider." + m + " hook failed -> " + t.getMessage());
-            }
-        }
-    }
-
-    private void hookHQF(ClassLoader cl) {
-        try {
-            XposedHelpers.findAndHookMethod("hq.f", cl, "b", XC_MethodReplacement.returnConstant(true));
-        } catch (Throwable t) {
-            XposedBridge.log("Hooker: hq.f.b hook failed -> " + t.getMessage());
-        }
-    }
 
     private void hookDownloads(ClassLoader cl) {
         String[] classes = {

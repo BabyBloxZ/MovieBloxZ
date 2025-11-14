@@ -1,50 +1,62 @@
 package com.kero.movieboxhooker.hooks;
 
 import com.kero.movieboxhooker.Logger;
-import de.robv.android.xposed.XC_MethodReplacement;
+
+import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XposedHelpers;
 
 public final class MemberProviderHook {
 
     private MemberProviderHook() {}
 
+    /**
+     * Hook عالمي: بدل ما نهوّك دوال غامضة ومعمولة Obfuscation
+     * نهوّك مباشرة MMKV.getBoolean(key, defaultValue)
+     * ونجبر القيم الثلاثة: TRUE
+     */
     public static boolean apply(ClassLoader cl) {
         try {
-            Class<?> providerClass = XposedHelpers.findClassIfExists(
-                    "com.transsion.member.MemberProvider", cl);
+            Class<?> mmkvClass = XposedHelpers.findClassIfExists(
+                    "com.tencent.mmkv.MMKV",
+                    cl
+            );
 
-            if (providerClass == null) {
-                Logger.warn("MemberProvider class not found");
+            if (mmkvClass == null) {
+                Logger.warn("MemberProviderHook: MMKV class not found");
                 return false;
             }
 
-            int success = 0;
+            XposedHelpers.findAndHookMethod(
+                    mmkvClass,
+                    "getBoolean",
+                    String.class,
+                    boolean.class,
+                    new XC_MethodHook() {
 
-            success += hook(providerClass, "b1"); // kv_is_enable_member
-            success += hook(providerClass, "h");  // kv_is_pay_enable_member
-            success += hook(providerClass, "n");  // kv_is_skip_ad
+                        @Override
+                        protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
+                            String key = (String) param.args[0];
+                            if (key == null) return;
 
-            if (success > 0) {
-                Logger.success("✓ MemberProvider hooks applied (" + success + " methods)");
-                return true;
-            } else {
-                Logger.warn("⚠ MemberProvider found but no methods hooked");
-                return false;
-            }
+                            switch (key) {
+
+                                case "kv_is_enable_member":
+                                case "kv_is_pay_enable_member":
+                                case "kv_is_skip_ad":
+                                    Logger.success("Force TRUE → " + key);
+                                    param.setResult(true);
+                                    break;
+                            }
+                        }
+                    }
+            );
+
+            Logger.success("✓ MemberProviderHook applied via MMKV.getBoolean()");
+            return true;
 
         } catch (Throwable t) {
-            Logger.error("MemberProvider hooks failed: " + t.getMessage());
+            Logger.error("MemberProviderHook failed: " + t.getMessage());
             return false;
-        }
-    }
-
-    private static int hook(Class<?> cls, String method) {
-        try {
-            XposedHelpers.findAndHookMethod(cls, method, XC_MethodReplacement.returnConstant(true));
-            Logger.success("Hooked " + method + "() → return true");
-            return 1;
-        } catch (Throwable e) {
-            return 0;
         }
     }
 }
