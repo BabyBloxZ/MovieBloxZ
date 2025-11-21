@@ -90,7 +90,6 @@ APK Output:
 app/build/outputs/apk/debug/app-debug.apk 
 ```
 
-مثال:
 ---
 
 # 👨‍💻 Author
@@ -123,13 +122,3 @@ If you find this useful:
 🔧 Submit pull requests
 
 📣 Share with the community
-
-
----
-
-## ✔️ جاهز 100% — Markdown كامل  
-تحب أضيف:
-- Banner احترافي للمشروع؟  
-- Logo مخصص MovieBox Hooker؟  
-- قسم Screenshots / GIFs
-قولّي وأنا أعمله فوراً 🔥
