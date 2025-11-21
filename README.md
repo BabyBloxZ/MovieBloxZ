@@ -1,67 +1,87 @@
-# 🎬 MovieBox Hooker (Xposed Module)
+# 🎬 MovieBox Hooker (LSPosed / LSPatch)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Version-0.0.1-blue.svg" alt="Version">
-  <img src="https://img.shields.io/badge/Android-7.0+-green.svg" alt="Android">
-  <img src="https://img.shields.io/badge/Xposed-Supported-orange.svg" alt="Xposed">
-  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License">
-  <a href="https://t.me/Kero309x_Mods">
-    <img src="https://img.shields.io/badge/Telegram-Join%20Channel-26A5E4?style=flat&logo=telegram&logoColor=white" alt="Telegram">
-  </a>
-</p>
-
-## 🔥 Overview
-
-**MovieBox Hooker** is an advanced **Xposed Framework module** built to unlock VIP and premium features of MovieBox App
-
-This project is designed with flexibility and stability in mind, ensuring compatibility even with obfuscated or updated versions of the target app.
-
-## ⚙️ Features
-- 💎 Unlocks all premium downloads & resolutions
-- 🧠 Smart hooks for obfuscated / renamed methods
-- 🧩 Fallback constructor hooks for dynamic classes
-- 🔐 Compatible with **LSPosed** 
-
-
-## 🧰 Tech Stack
-
-| Component | Description |
-|------------|--------------|
-| **Language** | Java |
-| **Framework** | Xposed / LSPosed |
-| **IDE** | Android Studio |
-| **Platform** | Android Runtime (ART) |
+![Version](https://img.shields.io/badge/Version-0.0.1-blue.svg)
+![Android](https://img.shields.io/badge/Android-7.0%2B-green.svg)
+![Xposed](https://img.shields.io/badge/Xposed-Supported-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Downloads](https://img.shields.io/github/downloads/its-kero309x/MovieBoxHooker/total?color=blue)
+[![Telegram](https://img.shields.io/badge/Telegram-Join%20Channel-26A5E4?logo=telegram)](https://t.me/Kero309x_Mods)
 
 ---
 
-## 📦 Installation
+## 🔥 Overview
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/its-kero309x/MovieBoxHooker.git
-2. Open it in Android Studio
+**MovieBox Hooker** is an advanced module for **Xposed / LSPosed / LSPatch** that unlocks all **VIP & Premium** features inside the MovieBox application.  
+It uses intelligent hooking, fallback logic, and obfuscation detection to remain compatible with multiple MovieBox versions.
 
-3. Build the module to generate the .apk file
+---
 
-4. Install it on your device
+## ⚙️ Features
 
-5. Enable the module via LSPosed Manager
+- 💎 Unlock all VIP / Premium content  
+- 🎥 Access all HD / Full HD / 4K resolutions  
+- 🚫 Disable all advertisements  
+- 📥 Unlock unlimited downloads  
+- 🧠 Smart obfuscation-aware hook detection  
+- 🧩 Constructor fallback for dynamic classes  
+- ⚡ Extremely lightweight & stable  
+- 🔐 Works with **LSPosed** and **LSPatch (non-root)**  
 
-6. Reboot your device and enjoy the new experience
+---
 
-## 👨‍💻 Author
+# 📦 Installation
 
-Developed with ❤️ by Kero309x
-Telegram: @its_kero309x
+## 🟢 Root Method — LSPosed
 
-## 📜 License
+### Requirements
+- Rooted Android device  
+- LSPosed installed  
+- MovieBox installed  
 
-This project is licensed under the MIT License
+### Steps
+1. Install **MovieBoxHooker.apk**  
+2. Open LSPosed Manager  
+3. Enable the module  
+4. Scope it to: `com.moviebox.app`  
+5. Reboot device  
+6. Enjoy VIP unlocked 🎉  
 
-## ⭐ Support
+---
 
-If you find this project helpful:
+# 🟣 Non-Root Method — LSPatch
 
-🌟 Give it a Star
-🐛 Report Issues
-💬 Share Feedback
+## Option A — Patch Installed App
+1. Open **LSPatch**  
+2. Go to **Manage Apps**  
+3. Select **MovieBox**  
+4. Tap **Patch App**  
+5. Add **MovieBox Hooker** module  
+6. Patch → Install  
+7. Open MovieBox → VIP unlocked  
+
+---
+
+## Option B — Patch External APK (Recommended)
+1. Download the original MovieBox APK  
+2. Open **LSPatch → Patch APK**  
+3. Select MovieBox APK  
+4. Add the module  
+5. Choose: **Portable Mode (Best)**  
+6. Patch → Install output APK  
+7. Open MovieBox → Enjoy premium features  
+
+---
+
+## ⚠ Notes About LSPatch
+- Requires re-patching after updates  
+- Some apps may detect modifications  
+- Works 100% without root  
+
+---
+
+# 🛠 Build From Source
+
+```bash
+git clone https://github.com/its-kero309x/MovieBoxHooker.git
+cd MovieBoxHooker
+./gradlew assembleDebug
