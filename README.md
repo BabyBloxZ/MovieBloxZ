@@ -1,5 +1,15 @@
 # 🎬 MovieBox Hooker (Xposed Module)
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-0.0.1-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/Android-7.0+-green.svg" alt="Android">
+  <img src="https://img.shields.io/badge/Xposed-Supported-orange.svg" alt="Xposed">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License">
+  <a href="https://t.me/Kero309x_Mods">
+    <img src="https://img.shields.io/badge/Telegram-Join%20Channel-26A5E4?style=flat&logo=telegram&logoColor=white" alt="Telegram">
+  </a>
+</p>
+
 ## 🔥 Overview
 
 **MovieBox Hooker** is an advanced **Xposed Framework module** built to unlock VIP and premium features of MovieBox App
