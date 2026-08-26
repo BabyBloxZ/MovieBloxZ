@@ -1,5 +1,5 @@
 {
-  "vip_unlocked": false,
+  "vip_unlocked": true,
   "adblock_enabled": true,
   "tracker_block_enabled": true,
   "update_control": {
@@ -10,17 +10,27 @@
     "update_url": "",
     "update_desc": ""
   },
-  "custom_dialog": {
+  "custom_poster": {
     "enabled": true,
+    "poster_id": "poster_v1",
+    "image_url": "https://raw.githubusercontent.com/Kero309x/MovieboxHooker/master/postermov.png",
+    "click_url": "https://t.me/Kero309x_Mods",
+    "width_dp": 300,
+    "height_dp": 420,
+    "max_show_count": 3,
+    "show_close_button": true
+  },
+  "custom_dialog": {
+    "enabled": false,
     "dialog_id": "notice_v1",
     "type": "dialog",
     "title": "MovieBox VIP Mod",
     "message": "مرحباً بك في النسخة المعدلة من MovieBox! تم تفعيل جميع مميزات VIP وإلغاء الإعلانات وحجب المحتوى غير اللائق.",
-    "image_url": "https://example.com/banner.png",
+    "image_url": "https://raw.githubusercontent.com/Kero309x/MovieboxHooker/master/bannermov.png",
     "image_width_dp": 280,
     "image_height_dp": 150,
     "primary_button": {
-      "text": "انضم لقناة التلجرام",
+      "text": "انضم للقناة",
       "url": "https://t.me/Kero309x_Mods"
     },
     "secondary_button": {
@@ -39,11 +49,13 @@
       "brazzers", "bangbros", "naughty", "onlyfans", "playboy", "penthouse", "softcore",
       "hardcore", "lewd", "fetish", "jav", "uncensored", "milf", "bdsm", "camgirl",
       "xhamster", "pornhub", "redtube", "youporn", "spankbang", "eporner", "mature 18+",
-      "erotica", "naked", "ecchi", "smut", "sex scenes", "uncut 18+", "سكس", "اباحي",
-      "إباحي", "جنس", "بورنو", "شيميل", "مثير", "فضايح", "عاريات", "عري", "افلام للكبار",
-      "افلام 18+", "للكبار فقط", "نيك", "طيز", "كس", "زب", "سحاق", "شذوذ", "ممحونة",
-      "دعارة", "شرموطة", "قحبة", "رقص ساخن", "سكسي", "اغراء", "إغراء", "شهوة", "متحولين", "مساج ساخن",
-      "sexo", "porno", "boobs", "pussy", "dick", "vagina", "blowjob", "anal", "cum", "masturbation"
+      "erotica", "naked", "ecchi", "smut", "sex scenes", "uncut 18+", "fightzone", "fight zone",
+      "fight_zone", "fightclub", "erotik", "sexy", "hot video", "bikini", "lingerie", "topless",
+      "سكس", "اباحي", "إباحي", "جنس", "بورنو", "شيميل", "مثير", "فضايح", "عاريات", "عري",
+      "افلام للكبار", "افلام 18+", "للكبار فقط", "نيك", "طيز", "كس", "زب", "سحاق", "شذوذ",
+      "ممحونة", "دعارة", "شرموطة", "قحبة", "رقص ساخن", "سكسي", "اغراء", "إغراء", "شهوة",
+      "متحولين", "مساج ساخن", "افلام سكس", "مقاطع ساخنة", "بدون حذف", "للكبار", "sexo", "porno",
+      "boobs", "pussy", "dick", "vagina", "blowjob", "anal", "cum", "masturbation"
     ]
   },
   "download_settings": {
