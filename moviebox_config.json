@@ -21,7 +21,7 @@
     "show_close_button": true
   },
   "custom_dialog": {
-    "enabled": false,
+    "enabled": true,
     "dialog_id": "notice_v1",
     "type": "dialog",
     "title": "MovieBox VIP Mod",
