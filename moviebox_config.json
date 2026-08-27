@@ -1,76 +1,43 @@
 {
-  "vip_unlocked": false,
+  "vip_unlocked": true,
   "adblock_enabled": true,
   "tracker_block_enabled": true,
+  "geo_bypass_enabled": true,
+  "telegram_channel": "https://t.me/Kero309x_Mods",
+  
   "update_control": {
-    "disable_updates": true,
-    "has_update": false,
-    "force_update": false,
-    "version_name": "",
-    "update_url": "",
-    "update_desc": ""
+    "disable_updates": true
   },
-  "custom_poster": {
-    "enabled": true,
-    "poster_id": "poster_v1",
-    "image_url": "https://raw.githubusercontent.com/Kero309x/MovieboxHooker/master/postermov.png",
-    "click_url": "https://t.me/Kero309x_Mods",
-    "width_dp": 300,
-    "height_dp": 420,
-    "max_show_count": 3,
-    "show_close_button": true
+  
+  "adult_content_shield": {
+    "enabled": true
   },
-  "custom_dialog": {
-    "enabled": true,
-    "dialog_id": "notice_v1",
-    "type": "dialog",
-    "title": "MovieBox VIP Mod",
-    "message": "مرحباً بك في النسخة المعدلة من MovieBox! تم تفعيل جميع مميزات VIP وإلغاء الإعلانات وحجب المحتوى غير اللائق.",
-    "image_url": "https://raw.githubusercontent.com/Kero309x/MovieboxHooker/master/bannermov.png",
-    "image_width_dp": 280,
-    "image_height_dp": 140,
-    "primary_button": {
-      "text": "انضم للقناة",
-      "url": "https://t.me/Kero309x_Mods"
-    },
-    "secondary_button": {
-      "text": "إغلاق",
-      "url": ""
-    },
-    "show_dont_show_again": true,
-    "max_show_count": 3
-  },
+  
   "tabs_control": {
-    "filter_enabled": true,
     "blocked_tab_codes": [
       "fightzone",
       "community",
       "room",
-      "short"
+      "short",
+      "mangotv"
     ]
   },
-  "geo_bypass_enabled": true,
-  "adult_content_shield": {
+  
+  "custom_dialog": {
     "enabled": true,
-    "blocked_keywords": [
-      "18+", "xxx", "porn", "adult", "sex", "erotic", "nude", "nudity", "hentai",
-      "nsfw", "sensual", "lust", "seduction", "taboo", "incest", "strip", "escort",
-      "brazzers", "bangbros", "naughty", "onlyfans", "playboy", "penthouse", "softcore",
-      "hardcore", "lewd", "fetish", "jav", "uncensored", "milf", "bdsm", "camgirl",
-      "xhamster", "pornhub", "redtube", "youporn", "spankbang", "eporner", "mature 18+",
-      "erotica", "naked", "ecchi", "smut", "sex scenes", "uncut 18+", "fightzone", "fight zone",
-      "fight_zone", "fightclub", "erotik", "sexy", "hot video", "bikini", "lingerie", "topless",
-      "سكس", "اباحي", "إباحي", "جنس", "بورنو", "شيميل", "مثير", "فضايح", "عاريات", "عري",
-      "افلام للكبار", "افلام 18+", "للكبار فقط", "نيك", "طيز", "كس", "زب", "سحاق", "شذوذ",
-      "ممحونة", "دعارة", "شرموطة", "قحبة", "رقص ساخن", "سكسي", "اغراء", "إغراء", "شهوة",
-      "متحولين", "مساج ساخن", "افلام سكس", "مقاطع ساخنة", "بدون حذف", "للكبار", "sexo", "porno",
-      "boobs", "pussy", "dick", "vagina", "blowjob", "anal", "cum", "masturbation"
-    ]
+    "dialog_id": "notice_v1",
+    "title": "MovieBox VIP Mod",
+    "message": "Welcome to MovieBox VIP! All features unlocked. Join our Telegram for updates.",
+    "button_text": "Join Telegram",
+    "button_action": "open_url",
+    "button_url": "https://t.me/Kero309x_Mods",
+    "banner_image_url": "https://raw.githubusercontent.com/Kero309x/MovieboxHooker/master/bannermov.png",
+    "max_show_count": 999
   },
-  "download_settings": {
-    "save_to_external_storage": true,
-    "custom_path": "Download/MovieBox",
-    "max_parallel_tasks": 10,
-    "unlock_vip_resolutions": true
+  
+  "custom_poster": {
+    "enabled": false,
+    "image_url": "https://raw.githubusercontent.com/Kero309x/MovieboxHooker/master/postermov.png",
+    "action_url": "https://t.me/Kero309x_Mods"
   }
 }
