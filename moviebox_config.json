@@ -28,7 +28,7 @@
     "message": "مرحباً بك في النسخة المعدلة من MovieBox! تم تفعيل جميع مميزات VIP وإلغاء الإعلانات وحجب المحتوى غير اللائق.",
     "image_url": "https://raw.githubusercontent.com/Kero309x/MovieboxHooker/master/bannermov.png",
     "image_width_dp": 280,
-    "image_height_dp": 150,
+    "image_height_dp": 140,
     "primary_button": {
       "text": "انضم للقناة",
       "url": "https://t.me/Kero309x_Mods"
@@ -39,6 +39,15 @@
     },
     "show_dont_show_again": true,
     "max_show_count": 3
+  },
+  "tabs_control": {
+    "filter_enabled": true,
+    "blocked_tab_codes": [
+      "fightzone",
+      "community",
+      "room",
+      "short"
+    ]
   },
   "geo_bypass_enabled": true,
   "adult_content_shield": {
