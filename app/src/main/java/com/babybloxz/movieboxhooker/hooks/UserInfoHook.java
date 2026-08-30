@@ -1,6 +1,6 @@
-package com.kero.movieboxhooker.hooks;
+package com.babybloxz.movieboxhooker.hooks;
 
-import com.kero.movieboxhooker.Logger;
+import com.babybloxz.movieboxhooker.Logger;
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XC_MethodReplacement;
 import de.robv.android.xposed.XposedBridge;
@@ -23,7 +23,7 @@ public final class UserInfoHook {
             XposedHelpers.findAndHookMethod(
                     c,
                     "getNickname",
-                    XC_MethodReplacement.returnConstant("Hooked with ❤️ by Kero309x ")
+                    XC_MethodReplacement.returnConstant("BabyBloxZ")
             );
 
             // Force set field after object creation
@@ -31,7 +31,7 @@ public final class UserInfoHook {
                 @Override
                 protected void afterHookedMethod(MethodHookParam param) {
                     try {
-                        XposedHelpers.setObjectField(param.thisObject, "nickname", "Hooked by Kero309x");
+                        XposedHelpers.setObjectField(param.thisObject, "nickname", "BabyBloxZ");
                     } catch (Throwable ignored) {}
                 }
             });

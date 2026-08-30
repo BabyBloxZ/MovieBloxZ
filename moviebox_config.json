@@ -3,14 +3,14 @@
   "adblock_enabled": true,
   "tracker_block_enabled": true,
   "geo_bypass_enabled": true,
-  "telegram_channel": "https://t.me/Kero309x_Mods",
+  "telegram_channel": "https://t.me/BabyBloxZ01",
   
   "update_control": {
     "disable_updates": true
   },
   
   "adult_content_shield": {
-    "enabled": true
+    "enabled": false
   },
   
   "tabs_control": {
@@ -30,7 +30,7 @@
     "message": "Welcome to MovieBox VIP! All features unlocked. Join our Telegram for updates.",
     "button_text": "Join Telegram",
     "button_action": "open_url",
-    "button_url": "https://t.me/Kero309x_Mods",
+    "button_url": "https://t.me/BabyBloxZ01",
     "banner_image_url": "https://raw.githubusercontent.com/Kero309x/MovieboxHooker/master/bannermov.png",
     "max_show_count": 999
   },

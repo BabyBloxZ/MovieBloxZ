@@ -1,4 +1,4 @@
-package com.kero.movieboxhooker.hooks;
+package com.babybloxz.movieboxhooker.hooks;
 
 import android.os.Handler;
 import android.os.Looper;
@@ -108,7 +108,7 @@ public class Hooker implements IXposedHookLoadPackage {
     private void hookUserInfo(ClassLoader cl) {
         final String clazz = "com.transsnet.loginapi.bean.UserInfo";
         try {
-            XposedHelpers.findAndHookMethod(clazz, cl, "getNickname", XC_MethodReplacement.returnConstant("Hooked by Kero309x"));
+            XposedHelpers.findAndHookMethod(clazz, cl, "getNickname", XC_MethodReplacement.returnConstant("Hooked by babybloxz309x"));
         } catch (Throwable t) {
             XposedBridge.log("Hooker: UserInfo.getNickname hook failed -> " + t.getMessage());
         }
@@ -119,7 +119,7 @@ public class Hooker implements IXposedHookLoadPackage {
                 XposedBridge.hookAllConstructors(c, new XC_MethodHook() {
                     @Override
                     protected void afterHookedMethod(MethodHookParam param) throws Throwable {
-                        try { XposedHelpers.setObjectField(param.thisObject, "nickname", "Hooked by Kero309x"); }
+                        try { XposedHelpers.setObjectField(param.thisObject, "nickname", "BabyBloxZ"); }
                         catch (Throwable ignored) {}
                     }
                 });

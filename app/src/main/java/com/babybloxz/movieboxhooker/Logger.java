@@ -1,4 +1,4 @@
-package com.kero.movieboxhooker;
+package com.babybloxz.movieboxhooker;
 
 import de.robv.android.xposed.XposedBridge;
 

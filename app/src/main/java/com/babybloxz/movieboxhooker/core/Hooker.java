@@ -1,4 +1,4 @@
-package com.kero.movieboxhooker.core;
+package com.babybloxz.movieboxhooker.core;
 
 import android.app.AndroidAppHelper;
 import android.content.Context;
@@ -12,8 +12,8 @@ import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.IXposedHookZygoteInit;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;
 
-import com.kero.movieboxhooker.*;
-import com.kero.movieboxhooker.hooks.*;
+import com.babybloxz.movieboxhooker.*;
+import com.babybloxz.movieboxhooker.hooks.*;
 
 public class Hooker implements IXposedHookLoadPackage, IXposedHookZygoteInit {
 

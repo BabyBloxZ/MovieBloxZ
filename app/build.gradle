@@ -3,15 +3,15 @@ plugins {
 }
 
 android {
-    namespace 'com.kero.movieboxhooker'
+    namespace 'com.babybloxz.movieboxhooker'
     compileSdk 35
 
     defaultConfig {
-        applicationId "com.kero.movieboxhooker"
+        applicationId "com.babybloxz.movieboxhooker"
         minSdk 28
         targetSdk 35
-        versionCode 4
-        versionName "2.0.1"
+        versionCode 1
+        versionName "1.0.1"
     }
 
     compileOptions {
@@ -27,7 +27,6 @@ android {
     }
 
     buildFeatures {
-        // ViewBinding مش محتاج، عشان مفيش UI
         viewBinding false
     }
 }

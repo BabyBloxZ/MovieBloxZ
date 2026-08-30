@@ -1,8 +1,8 @@
-package com.kero.movieboxhooker;
+package com.babybloxz.movieboxhooker;
 
 import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;
-import com.kero.movieboxhooker.hooks.Hooker;
+import com.babybloxz.movieboxhooker.hooks.Hooker;
 
 public class MainHook implements IXposedHookLoadPackage {
 

@@ -1,6 +1,6 @@
-package com.kero.movieboxhooker.hooks;
+package com.babybloxz.movieboxhooker.hooks;
 
-import com.kero.movieboxhooker.Logger;
+import com.babybloxz.movieboxhooker.Logger;
 import de.robv.android.xposed.XC_MethodReplacement;
 import de.robv.android.xposed.XposedHelpers;
 
