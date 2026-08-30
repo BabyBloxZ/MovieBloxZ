@@ -1,36 +1,17 @@
 # 🎬 MovieBloxZ — Xposed / LSPosed / LSPatch / NPatch Module
 
-[
 
-![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)
-
-](https://github.com/BabyBloxZ/MovieBloxZ)
-[
-
-![Android](https://img.shields.io/badge/Android-7.0%2B-green.svg)
-
-](https://github.com/BabyBloxZ/MovieBloxZ)
-[
-
-![Xposed](https://img.shields.io/badge/Xposed-Supported-orange.svg)
-
-](https://github.com/BabyBloxZ/MovieBloxZ)
-[
-
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-
-](https://github.com/BabyBloxZ/MovieBloxZ)
-[
-
-![Telegram](https://img.shields.io/badge/Telegram-Join%20Channel-26A5E4?logo=telegram)
-
-](https://t.me/BabyBloxZ01)
+![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)(https://github.com/BabyBloxZ/MovieBloxZ)
+![Android](https://img.shields.io/badge/Android-7.0%2B-green.svg)(https://github.com/BabyBloxZ/MovieBloxZ)
+![Xposed](https://img.shields.io/badge/Xposed-Supported-orange.svg)(https://github.com/BabyBloxZ/MovieBloxZ)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)(https://github.com/BabyBloxZ/MovieBloxZ)
+![Telegram](https://img.shields.io/badge/Telegram-Join%20Channel-26A5E4?logo=telegram)(https://t.me/BabyBloxZ01)
 
 ---
 
 ## 🔥 Overview
 
-**MovieBloxZ** is an Xposed module that hooks into the MovieBox app to unlock VIP-gated features.  
+**MovieBloxZ** is an Xposed module that hooks into the MovieBox app to unlock VIP features.  
 It uses class-existence detection, retry logic with fresh-install awareness, and a generic reflection-based fallback for cases where the target app's classes get obfuscated or renamed between updates.
 
 **Supported packages:**
