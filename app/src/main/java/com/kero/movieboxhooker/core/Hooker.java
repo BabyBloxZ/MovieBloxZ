@@ -127,27 +127,31 @@ public class Hooker implements IXposedHookLoadPackage, IXposedHookZygoteInit {
 
             Logger.success("📚 Classes loaded, applying hooks...");
 
-            int ok = 0;
-            int total = 8; // updated: we added SkipAdHook
+            // Ganti bagian ini di attemptHooks():
 
-            ok += MemberInfoHook.apply(cl) ? 1 : 0;
-            ok += MemberBriefInfoHook.apply(cl) ? 1 : 0;
-            ok += MemberProviderHook.apply(cl) ? 1 : 0;
-            ok += SkipAdHook.apply(cl) ? 1 : 0;   
-            ok += DownloadsHook.apply(cl) ? 1 : 0;
-            ok += MemberCheckResultHook.apply(cl) ? 1 : 0;
-            ok += UserInfoHook.apply(cl) ? 1 : 0;
+int ok = 0;
+int total = 12; // updated total
 
-            if (ok == total) {
-                Logger.success("🎉 ALL hooks active: " + ok + "/" + total);
-                hooksApplied = true;
-            } else if (ok >= 5) {  // threshold adjusted (was 4 for 7 hooks)
-                Logger.success("✅ Partial success: " + ok + "/" + total);
-                hooksApplied = true;
-            } else {
-                Logger.warn("⚠️ Insufficient hook success: " + ok + "/" + total);
-                throw new Exception("Not enough hooks applied");
-            }
+ok += MemberInfoHook.apply(cl)           ? 1 : 0;
+ok += MemberBriefInfoHook.apply(cl)      ? 1 : 0;
+ok += MemberProviderHook.apply(cl)       ? 1 : 0;
+ok += MemberCheckResultHook.apply(cl)    ? 1 : 0;
+ok += MemberResolutionBeanHook.apply(cl) ? 1 : 0;  // NEW
+ok += DownloadsHook.apply(cl)            ? 1 : 0;
+ok += SkipAdHook.apply(cl)               ? 1 : 0;
+ok += PremiumAccessHook.apply(cl)        ? 1 : 0;  // NEW
+ok += ShortTVContentHook.apply(cl)       ? 1 : 0;  // NEW
+ok += UserInfoHook.apply(cl)             ? 1 : 0;
+
+if (ok == total) {
+    Logger.success("🎉 ALL hooks active: " + ok + "/" + total);
+    hooksApplied = true;
+} else if (ok >= 7) {  // threshold ~70%
+    Logger.success("✅ Partial success: " + ok + "/" + total);
+    hooksApplied = true;
+} else {
+    throw new Exception("Not enough hooks applied: " + ok + "/" + total);
+}
 
         } catch (Throwable e) {
             Logger.error("Hook attempt " + (attempt + 1) + " failed: " + e.getMessage());
