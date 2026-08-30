@@ -12,9 +12,11 @@ public final class DownloadsHook {
         try {
             String[] classes = {
                 "com.transsion.baselib.db.download.DownloadBean",
+                "com.transsion.baselib.db.download.VipInfo",           // NEW
                 "com.transsion.moviedetailapi.DownloadItem",
                 "com.transsion.moviedetailapi.bean.DownloadResolutionItem",
-                "com.transsion.shorttv.bean.DownloadItem"
+                "com.transsion.shorttv.bean.DownloadItem",
+                "com.transsion.shorttv_pugc.bean.DownloadItem"         // NEW
             };
 
             int successCount = 0;
