@@ -1,124 +1,117 @@
-# 🎬 MovieBox Hooker (Xposed / LSPosed / LSPatch)
+# 🎬 MovieBloxZ — Xposed / LSPosed / LSPatch / NPatch Module
 
-![Version](https://img.shields.io/badge/Version-0.0.1-blue.svg)
+[
+
+![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)
+
+](https://github.com/BabyBloxZ/MovieBloxZ)
+[
+
 ![Android](https://img.shields.io/badge/Android-7.0%2B-green.svg)
+
+](https://github.com/BabyBloxZ/MovieBloxZ)
+[
+
 ![Xposed](https://img.shields.io/badge/Xposed-Supported-orange.svg)
+
+](https://github.com/BabyBloxZ/MovieBloxZ)
+[
+
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Downloads](https://img.shields.io/github/downloads/its-kero309x/MovieBoxHooker/total?color=blue)
-[![Telegram](https://img.shields.io/badge/Telegram-Join%20Channel-26A5E4?logo=telegram)](https://t.me/Kero309x_Mods)
+
+](https://github.com/BabyBloxZ/MovieBloxZ)
+[
+
+![Telegram](https://img.shields.io/badge/Telegram-Join%20Channel-26A5E4?logo=telegram)
+
+](https://t.me/BabyBloxZ01)
 
 ---
 
 ## 🔥 Overview
 
-**MovieBox Hooker** is an advanced module for **Xposed / LSPosed / LSPatch** that unlocks all **VIP & Premium** features inside the MovieBox app.  
-It uses intelligent hooking, fallback logic, and obfuscation detection to remain compatible with multiple versions.
+**MovieBloxZ** is an Xposed module that hooks into the MovieBox app to unlock VIP-gated features.  
+It uses class-existence detection, retry logic with fresh-install awareness, and a generic reflection-based fallback for cases where the target app's classes get obfuscated or renamed between updates.
+
+**Supported packages:**
+- `com.community.oneroom`
+- `com.community.mbox.in`
 
 ---
 
-## ⚙️ Features
+## 📦 Installation
 
-- 💎 Unlock all VIP & Premium content  
-- 🎥 Enable HD / Full HD / 4K resolutions  
-- 🚫 Remove ads completely  
-- 📥 Unlock unlimited downloads  
-- 🧠 Smart obfuscation-aware hook detection  
-- 🧩 Constructor-fallback for dynamic classes  
-- ⚡ Extremely lightweight & stable  
-- 🔐 Supports **LSPosed** & **LSPatch (non-root)**  
+### 🟢 Root — LSPosed
 
----
+**Requirements:**
+- Rooted Android device
+- LSPosed installed
+- MovieBox app installed
 
-# 📦 Installation
-
-## 🟢 Root Method — LSposed
-
-### Requirements
-- Rooted Android device  
-- LSPosed installed  
-- MovieBox installed  
-
-### Steps
-1. Install the module APK  
-2. Open LSPosed Manager  
-3. Enable the module  
-4. Scope it to: `com.moviebox.app`  
-5. Reboot  
-6. Enjoy VIP unlocked 🎉  
+**Steps:**
+1. Install the module APK
+2. Open LSPosed Manager
+3. Enable the module
+4. Set scope to `com.community.oneroom` or `com.community.mbox.in`
+5. Reboot
+6. Open the app — VIP unlocked
 
 ---
 
-# 🟣 Non-Root Method — LSPaapk
+### 🟣 Non-Root — LSPatch
 
-## Option A — Patch Installed App
-1. Open **LSPatch**  
-2. Go to **Manage Apps**  
-3. Select **MovieBox**  
-4. Tap **Patch App**  
-5. Add **MovieBox Hooker** module  
-6. Patch → Install  
-7. Open MovieBox → VIP unlocked  
+**Option A — Patch an already-installed app:**
+1. Open **LSPatch**
+2. Go to **Manage Apps**
+3. Select the target app
+4. Tap **Patch App**
+5. Add the **MovieBloxZ** module
+6. Patch → Install
 
----
-
-## Option B — Patch External APK (Recommended)
-1. Download original MovieBox APK  
-2. Open **LSPatch → Patch APK**  
-3. Select MovieBox APK  
-4. Add the module  
-5. Choose: **Portable Mode (Recommended)**  
-6. Patch → Install output APK  
-7. Open MovieBox → Enjoy Premium Features  
+**Option B — Patch an external APK (recommended):**
+1. Download the original app APK
+2. Open **LSPatch → Patch APK**
+3. Select the APK
+4. Add the module
+5. Choose **Portable Mode**
+6. Patch → Install the output APK
 
 ---
 
-## ⚠ Notes About LSPatch
-- Requires re-patching after every MovieBox update  
-- Some security apps may detect modification  
-- Works fully without root  
+### 🔵 Non-Root — NPatch
+
+1. Download the original app APK
+2. Open **NPatch**
+3. Select the APK
+4. Add the **MovieBloxZ** module
+5. Patch → Install
 
 ---
 
-# 🛠 Build From Source
+## ⚠️ Notes
 
-```bash
-git clone https://github.com/its-kero309x/MovieBoxHooker.git
-cd MovieBoxHooker
-./gradlew assembleDebug
-
-APK Output:
-app/build/outputs/apk/debug/app-debug.apk 
-```
+- LSPatch/NPatch require re-patching after every app update
+- Root/LSPosed method doesn't need re-patching after updates
+- Some security or anti-tamper checks in the target app may detect the hook
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
-Developer: Kero309x
-
-Telegram: @its_kero309x
-
-Channel: @Kero309x_Mods
-
-
+- **Developer:** BabyBloxZ
+- **Telegram:** [@BabyBloxZ01](https://t.me/BabyBloxZ01)
 
 ---
 
-# 📜 License
+## 📜 License
 
-This project is licensed under the MIT License.
-
+This project is licensed under the **MIT License**.
 
 ---
 
-⭐ Support the Project
+## ⭐ Support
 
-If you find this useful:
-
-🌟 Give the repo a star
-
-🐞 Report issues
-
-🔧 Submit pull requests
-
-📣 Share with the community
+If this project is useful to you:
+- 🌟 Star the repo
+- 🐞 Report issues
+- 📣 Share it with the community
