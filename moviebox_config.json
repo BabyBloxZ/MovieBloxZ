@@ -1,43 +1,25 @@
 {
   "vip_unlocked": true,
   "adblock_enabled": true,
-  "tracker_block_enabled": true,
-  "geo_bypass_enabled": true,
+  "downloads_unlocked": true,
   "telegram_channel": "https://t.me/BabyBloxZ01",
-  
   "update_control": {
     "disable_updates": true
   },
-  
-  "adult_content_shield": {
-    "enabled": false
-  },
-  
-  "tabs_control": {
-    "blocked_tab_codes": [
-      "fightzone",
-      "community",
-      "room",
-      "short",
-      "mangotv"
-    ]
-  },
-  
   "custom_dialog": {
     "enabled": true,
     "dialog_id": "notice_v1",
-    "title": "MovieBox VIP Mod",
-    "message": "Welcome to MovieBox VIP! All features unlocked. Join our Telegram for updates.",
+    "title": "MovieBox VIP Mod by BabyBloxZ",
+    "message": "Welcome! VIP unlocked, Ads removed, Downloads unlocked. Join Telegram for updates.",
     "button_text": "Join Telegram",
     "button_action": "open_url",
     "button_url": "https://t.me/BabyBloxZ01",
-    "banner_image_url": "https://raw.githubusercontent.com/Kero309x/MovieboxHooker/master/bannermov.png",
+    "banner_image_url": "https://raw.githubusercontent.com/BabyBloxZ/MovieBloxZ/main/bannermov.jpg",
     "max_show_count": 999
   },
-  
   "custom_poster": {
-    "enabled": false,
-    "image_url": "https://raw.githubusercontent.com/Kero309x/MovieboxHooker/master/postermov.png",
-    "action_url": "https://t.me/Kero309x_Mods"
+    "enabled": true,
+    "image_url": "https://raw.githubusercontent.com/BabyBloxZ/MovieBloxZ/main/postermov.jpg",
+    "action_url": "https://t.me/BabyBloxZ01"
   }
 }
