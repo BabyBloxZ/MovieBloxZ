@@ -13,13 +13,16 @@ public final class MemberInfoHook {
             Class<?> c = XposedHelpers.findClassIfExists("com.transsion.memberapi.MemberInfo", cl);
             if (c == null) return false;
 
-            XposedHelpers.findAndHookMethod(c, "isActive", XC_MethodReplacement.returnConstant(true));
-            XposedHelpers.findAndHookMethod(c, "getExpiryDate", XC_MethodReplacement.returnConstant("2099-01-01"));
-            XposedHelpers.findAndHookMethod(c, "getDaysLeft", XC_MethodReplacement.returnConstant(9999));
-            XposedHelpers.findAndHookMethod(c, "getMemberType", XC_MethodReplacement.returnConstant(2));
-            XposedHelpers.findAndHookMethod(c, "getNextRenewDate", XC_MethodReplacement.returnConstant("2099-01-01"));
+            XposedHelpers.findAndHookMethod(c, "isActive",        XC_MethodReplacement.returnConstant(true));
+            XposedHelpers.findAndHookMethod(c, "isAutoRenew",     XC_MethodReplacement.returnConstant(true));  // NEW
+            XposedHelpers.findAndHookMethod(c, "getExpiryDate",   XC_MethodReplacement.returnConstant("2099-01-01"));
+            XposedHelpers.findAndHookMethod(c, "getNextRenewDate",XC_MethodReplacement.returnConstant("2099-01-01"));
+            XposedHelpers.findAndHookMethod(c, "getDaysLeft",     XC_MethodReplacement.returnConstant(9999));
+            XposedHelpers.findAndHookMethod(c, "getMemberType",   XC_MethodReplacement.returnConstant(2));
+            XposedHelpers.findAndHookMethod(c, "getVipLevel",     XC_MethodReplacement.returnConstant(2));       // NEW
+            XposedHelpers.findAndHookMethod(c, "getPoint",        XC_MethodReplacement.returnConstant(Integer.MAX_VALUE)); // NEW
 
-            Logger.success("✓ MemberInfo hooks applied (5 methods)");
+            Logger.success("✓ MemberInfo hooks applied (8 methods)");
             return true;
 
         } catch (Throwable t) {
